@@ -34,3 +34,15 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Characters
+Characters.meta
+SteamVR
+SteamVR.meta
+SteamVR_Resources
+SteamVR_Resources.meta
+UMA
+UMA.meta
+o3n
+o3n.meta
+.vscode/
