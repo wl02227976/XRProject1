@@ -130,22 +130,9 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-<<<<<<< HEAD
-    "com.unity.xr.oculus.standalone": {
-      "version": "2.38.4",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.xr.openvr.standalone": {
-      "version": "2.0.5",
-      "depth": 0,
-=======
     "nuget.mono-cecil": {
       "version": "0.1.6-preview",
       "depth": 1,
->>>>>>> 6d3e465076318f92a368763ea531c1e0eac14514
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

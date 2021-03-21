@@ -35,4 +35,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-.vscode/
+Characters.meta
+Classic_car_1955.meta
+SteamVR.meta
+SteamVR_Resources.meta
+UMA.meta
+o3n.meta
