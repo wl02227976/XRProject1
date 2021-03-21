@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11983056, g: 0.12347692, b: 0.10655742, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140105, g: 0.50052685, b: 0.57034713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2693,32 +2693,37 @@ PrefabInstance:
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9658997
+      value: 0.03662965
       objectReference: {fileID: 0}
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.007115083
+      value: 0.5302963
       objectReference: {fileID: 0}
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.258812
+      value: -0.8052259
       objectReference: {fileID: 0}
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0019064825
+      value: 0.2627839
       objectReference: {fileID: 0}
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.84400004
+      value: 27.519001
       objectReference: {fileID: 0}
     - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -30.000002
+      value: -194.344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8705052599933656846, guid: ba124179af6a3a7469f127358241673d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -70.26501
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba124179af6a3a7469f127358241673d, type: 3}
