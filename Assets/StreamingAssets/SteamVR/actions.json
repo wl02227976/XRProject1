@@ -81,6 +81,30 @@
       "name": "/actions/mixedreality/in/ExternalCamera",
       "type": "pose",
       "requirement": "optional"
+    },
+    {
+      "name": "/actions/Homer/in/TriggerButton_Bool",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Homer/in/TriggerButton_Vector1",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/Homer/in/SideButton_Bool",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Homer/in/UppderButton_Bool",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Homer/in/LowerButton_Bool",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Homer/in/Touchpad_Vector2",
+      "type": "vector2"
     }
   ],
   "action_sets": [
@@ -98,6 +122,10 @@
     },
     {
       "name": "/actions/mixedreality",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/Homer",
       "usage": "single"
     }
   ],

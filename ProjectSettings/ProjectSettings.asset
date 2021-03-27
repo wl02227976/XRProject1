@@ -246,9 +246,9 @@ PlayerSettings:
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
-  clonedFromGUID: c0afd0d1d80e3634a9dac47e8a0426ea
-  templatePackageId: com.unity.template.3d@4.2.8
-  templateDefaultScene: Assets/Scenes/SampleScene.unity
+  clonedFromGUID: 00000000000000000000000000000000
+  templatePackageId: 
+  templateDefaultScene: 
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -323,8 +323,7 @@ PlayerSettings:
     - Oculus
   - m_BuildTarget: Metro
     m_Enabled: 0
-    m_Devices:
-    - WindowsMR
+    m_Devices: []
   - m_BuildTarget: N3DS
     m_Enabled: 0
     m_Devices: []

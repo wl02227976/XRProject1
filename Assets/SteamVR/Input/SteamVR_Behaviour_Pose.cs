@@ -16,6 +16,8 @@ namespace Valve.VR
     {
         public SteamVR_Action_Pose poseAction = SteamVR_Input.GetAction<SteamVR_Action_Pose>("Pose");
 
+        
+
         [Tooltip("The device this action should apply to. Any if the action is not device specific.")]
         public SteamVR_Input_Sources inputSource;
 

@@ -55,6 +55,18 @@ namespace Valve.VR
         
         private static SteamVR_Action_Pose p_mixedreality_ExternalCamera;
         
+        private static SteamVR_Action_Boolean p_homer_TriggerButton_Bool;
+        
+        private static SteamVR_Action_Single p_homer_TriggerButton_Vector1;
+        
+        private static SteamVR_Action_Boolean p_homer_SideButton_Bool;
+        
+        private static SteamVR_Action_Boolean p_homer_UppderButton_Bool;
+        
+        private static SteamVR_Action_Boolean p_homer_LowerButton_Bool;
+        
+        private static SteamVR_Action_Vector2 p_homer_Touchpad_Vector2;
+        
         public static SteamVR_Action_Boolean default_InteractUI
         {
             get
@@ -207,6 +219,54 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean homer_TriggerButton_Bool
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_TriggerButton_Bool.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Single homer_TriggerButton_Vector1
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_TriggerButton_Vector1.GetCopy<SteamVR_Action_Single>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean homer_SideButton_Bool
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_SideButton_Bool.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean homer_UppderButton_Bool
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_UppderButton_Bool.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean homer_LowerButton_Bool
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_LowerButton_Bool.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Vector2 homer_Touchpad_Vector2
+        {
+            get
+            {
+                return SteamVR_Actions.p_homer_Touchpad_Vector2.GetCopy<SteamVR_Action_Vector2>();
+            }
+        }
+        
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
@@ -228,7 +288,13 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.mixedreality_ExternalCamera,
+                    SteamVR_Actions.homer_TriggerButton_Bool,
+                    SteamVR_Actions.homer_TriggerButton_Vector1,
+                    SteamVR_Actions.homer_SideButton_Bool,
+                    SteamVR_Actions.homer_UppderButton_Bool,
+                    SteamVR_Actions.homer_LowerButton_Bool,
+                    SteamVR_Actions.homer_Touchpad_Vector2};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
                     SteamVR_Actions.default_InteractUI,
                     SteamVR_Actions.default_Teleport,
@@ -247,7 +313,13 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.mixedreality_ExternalCamera,
+                    SteamVR_Actions.homer_TriggerButton_Bool,
+                    SteamVR_Actions.homer_TriggerButton_Vector1,
+                    SteamVR_Actions.homer_SideButton_Bool,
+                    SteamVR_Actions.homer_UppderButton_Bool,
+                    SteamVR_Actions.homer_LowerButton_Bool,
+                    SteamVR_Actions.homer_Touchpad_Vector2};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[] {
                     SteamVR_Actions.default_Haptic};
             Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[] {
@@ -265,13 +337,19 @@ namespace Valve.VR
                     SteamVR_Actions.default_SnapTurnRight,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
-                    SteamVR_Actions.buggy_Reset};
+                    SteamVR_Actions.buggy_Reset,
+                    SteamVR_Actions.homer_TriggerButton_Bool,
+                    SteamVR_Actions.homer_SideButton_Bool,
+                    SteamVR_Actions.homer_UppderButton_Bool,
+                    SteamVR_Actions.homer_LowerButton_Bool};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[] {
                     SteamVR_Actions.default_Squeeze,
-                    SteamVR_Actions.buggy_Throttle};
+                    SteamVR_Actions.buggy_Throttle,
+                    SteamVR_Actions.homer_TriggerButton_Vector1};
             Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
                     SteamVR_Actions.platformer_Move,
-                    SteamVR_Actions.buggy_Steering};
+                    SteamVR_Actions.buggy_Steering,
+                    SteamVR_Actions.homer_Touchpad_Vector2};
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
             Valve.VR.SteamVR_Input.actionsSkeleton = new Valve.VR.SteamVR_Action_Skeleton[] {
                     SteamVR_Actions.default_SkeletonLeftHand,
@@ -290,7 +368,13 @@ namespace Valve.VR
                     SteamVR_Actions.buggy_Steering,
                     SteamVR_Actions.buggy_Throttle,
                     SteamVR_Actions.buggy_Brake,
-                    SteamVR_Actions.buggy_Reset};
+                    SteamVR_Actions.buggy_Reset,
+                    SteamVR_Actions.homer_TriggerButton_Bool,
+                    SteamVR_Actions.homer_TriggerButton_Vector1,
+                    SteamVR_Actions.homer_SideButton_Bool,
+                    SteamVR_Actions.homer_UppderButton_Bool,
+                    SteamVR_Actions.homer_LowerButton_Bool,
+                    SteamVR_Actions.homer_Touchpad_Vector2};
         }
         
         private static void PreInitActions()
@@ -314,6 +398,12 @@ namespace Valve.VR
             SteamVR_Actions.p_buggy_Brake = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/buggy/in/Brake")));
             SteamVR_Actions.p_buggy_Reset = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/buggy/in/Reset")));
             SteamVR_Actions.p_mixedreality_ExternalCamera = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/mixedreality/in/ExternalCamera")));
+            SteamVR_Actions.p_homer_TriggerButton_Bool = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Homer/in/TriggerButton_Bool")));
+            SteamVR_Actions.p_homer_TriggerButton_Vector1 = ((SteamVR_Action_Single)(SteamVR_Action.Create<SteamVR_Action_Single>("/actions/Homer/in/TriggerButton_Vector1")));
+            SteamVR_Actions.p_homer_SideButton_Bool = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Homer/in/SideButton_Bool")));
+            SteamVR_Actions.p_homer_UppderButton_Bool = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Homer/in/UppderButton_Bool")));
+            SteamVR_Actions.p_homer_LowerButton_Bool = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/Homer/in/LowerButton_Bool")));
+            SteamVR_Actions.p_homer_Touchpad_Vector2 = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/Homer/in/Touchpad_Vector2")));
         }
     }
 }

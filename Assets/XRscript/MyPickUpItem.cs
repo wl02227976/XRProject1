@@ -9,6 +9,7 @@ public class MyPickUpItem : MonoBehaviour
 
     public GameObject hintUI;
 
+    public MyFadeOutController FadeOut;
 
     void Start()
     {
@@ -29,6 +30,9 @@ public class MyPickUpItem : MonoBehaviour
                 hintUI.SetActive(false); 
                 gameObject.SetActive(false);
                 canPick = false;
+                if(FadeOut != null){
+                    FadeOut.isStart = true;
+                }
             }
         }
     }
