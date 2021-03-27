@@ -37,9 +37,7 @@ public class MySubtiteController : MonoBehaviour
         }
         _backText.text = "";
         _frontText.text = "";
-        if(EndTalkHandler != null){
-            EndTalkHandler();
-        }
+        EndTalkHandler();
     }
 
 }

@@ -11,6 +11,8 @@ public class MyPickUpItem : MonoBehaviour
 
     public MyFadeOutController FadeOut;
 
+    public MyDoorController DoorController;
+
     void Start()
     {
         _aduio = GetComponent<AudioSource>();
@@ -32,6 +34,9 @@ public class MyPickUpItem : MonoBehaviour
                 canPick = false;
                 if(FadeOut != null){
                     FadeOut.isStart = true;
+                }
+                if(DoorController != null){
+                    DoorController.isOpen = true;
                 }
             }
         }
